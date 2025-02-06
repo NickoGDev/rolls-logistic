@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+    background-color: rgb(247, 248, 247);
+    /* height: 100%;
+    width: 100%; */
+}
+*{
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+input {
+    font-family: 'Assistant', sans-serif;
+}
+button {
+    font-family: 'Assistant', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+select:focus {
+    outline: none;
+}
+select {
+    font-family: 'Assistant', sans-serif;
+}
+label {
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* This ensures the label doesn’t stretch */
+}
+hr {
+    margin: 0;
+    padding: 0;
+}

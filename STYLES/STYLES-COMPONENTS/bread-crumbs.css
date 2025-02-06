@@ -1,0 +1,16 @@
+.bread-crumbs {
+    font-size: 21.5px;
+    margin-bottom: -12px;
+}
+.bread-crumbs label {
+    color: rgb(13, 14, 53);
+
+    font-weight: 400;
+}
+.bread-crumbs a {
+    color: rgba(13, 14, 53, .7);
+    font-weight: 300;
+}
+.bread-crumbs a:hover {
+    text-decoration: underline;
+}

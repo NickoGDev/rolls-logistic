@@ -1,0 +1,31 @@
+
+/*HEADER COMPONENTS*/
+.shipments-heading-components {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.shipments-headerP {
+    font-weight: 400;
+    font-size: 38px;
+    color: rgba(48, 48, 48);
+}
+.shipments-secondaryS {
+    font-size: 18.5px;
+    font-weight: 400;
+    color: rgba(48, 48, 48, .9);
+    width: 70%;
+    line-height: 1.5;
+}
+.shipments-button-link {
+    display: flex;
+    margin-top: 20px;
+}
+.shipments-button-link a {
+    display: inline-block;
+    color: rgba(48, 48, 48);
+    padding: 8px 15px;
+    font-size: 19px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+}

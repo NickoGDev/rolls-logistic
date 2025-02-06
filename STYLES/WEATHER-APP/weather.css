@@ -1,0 +1,205 @@
+
+.shipping-weather-container {
+    display: grid;
+    align-items: start;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+.weather-con1, .weather-con2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    background-color: rgb(241, 241, 245, .5);
+    border-radius: 12px;
+    padding: 15px 13.9px;
+    /* border: 1px solid lightgray; */
+}
+input {
+    outline: none;
+}
+.weather-app-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10.5px;
+    border-radius: 11px;
+    background-color: rgba(129, 153, 233, 0.1);
+    text-align: center;
+    padding: 14px 18px;
+}
+.input-country {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.input-country input {
+    width: 60%;
+    padding: 8px 12px;
+    font-size: 23px;
+    border: 1px solid rgb(172, 172, 172);
+}
+.input-country input::placeholder {
+    font-size: 22px;
+    color: rgb(48, 48, 48, .4);
+    font-weight: 400;
+}
+.city-date-con {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 12px;
+}
+.weather-city {
+    display: flex;
+    line-height: 1.5;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(13, 14, 53, .8);
+    border-bottom: 2px solid rgba(62, 65, 228, 0.1);
+    width: 100%;
+}
+.secon-weather {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 5px;
+    padding: 4px 1px;
+}
+.majorData-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.city-clock-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    width: 100%;
+    border-radius: 100px;
+    padding: 2px 0px;
+}
+.current-time {
+    font-size: 18.2px;
+    font-weight: 600;
+    color: rgba(13, 14, 53, .7);
+}
+.current-date {
+    text-align: left;
+    color: rgba(13,14 ,53, .6);
+    font-size: 13.5px;
+    font-weight: 500;
+}
+.temperature {
+    font-weight: 400;
+    font-size: 38px;
+    color: rgba(13, 14, 53, .7);
+}
+.temperature-icon-valueCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15.5px;
+}
+.weather-icon {
+    width: 40px;
+    background-color: rgba(31, 31, 63, 0.1);
+    border-radius: 100px;
+    padding: 1px 2px;
+}
+
+.row-weather-dataCon {
+    display: flex;
+    align-items: center;
+    column-gap: 25.5px;
+}
+.weather-secon-data {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    line-height: 1.3;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(48, 48, 48, .7);
+}
+.weather-description {
+    font-size: 14.2px;
+    color: rgba(48, 48, 48, .9);
+    font-weight: 700;
+}
+.weather-analysis-container, .weather-analysis-container1 {
+    display: none;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 6px;
+    width: 65%;
+    min-width: 400px;
+}
+.weather-analysis-container.active {
+    display: flex;
+}
+.weather-analysis-container1.active {
+    display: flex;
+}
+
+.weather-warning-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-top: 2px;
+}
+.weather-warning-icon img {
+    width: 16px;
+    background-color: rgb(255, 255, 255, .7);
+    padding: 2px 2px;
+}
+.weather-header-notice {
+    color: rgb(226, 78, 59, .8);
+    font-size: 400;
+}
+.shipment-admission-header hr {
+    width: 100%;
+    height: 0;
+    border: 1px solid rgba(13, 14, 53, 0.1);
+}
+.shipping-statement {
+  color: rgba(48, 48, 48, .9);
+  font-weight: 600;  
+  font-size: 29.7px;
+  line-height: 1.3;
+}
+.weather-analysis-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    background-color: rgba(233, 82, 62, 0.1);
+    padding: 6px 9px;
+    border-radius: 4px;
+} 
+.weather-analysis-header {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    font-weight: 600;
+    font-size: 15.7px;
+}
+.weather-analysis-img {
+    width: 18px;
+    border: 1px solid rgb(226, 78, 59);
+    border-radius: 50px;
+}
+.weather-text-status {
+    width: 100%;
+    color: rgb(226, 78, 59, .8);
+    font-weight: 500;
+    font-size: 14.8px;
+}
+.restricted-country {
+    font-weight: 800;
+    font-size: 14px;
+}

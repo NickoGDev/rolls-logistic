@@ -1,0 +1,308 @@
+
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+}
+.signup-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border: 1px solid rgb(228, 227, 227);
+    background-color: #fff;
+    border-radius: 20px;
+}
+.signup-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 15px 12px;
+}
+.signup-col-seperator{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    column-gap: 20px;
+    width: 100%;
+}
+.signup-left-section {
+    width: 100%;
+    background-color: rgba(129, 153, 233, 0.2);
+    border-radius: 15px;
+}
+.header-circular {
+    display: flex;
+
+}
+.signup-lot {
+    padding: 18px 18px;
+    display: flex;
+    flex-direction: column;
+}
+.left-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.left-header-logo {
+    display: flex;
+    column-gap: 7.2px;
+    transform: skewX(-13deg);
+    align-items: center;
+    font-size: 33px;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 4px 12px;
+}
+.left-header-logo img {
+    height: 50px;
+}
+.left-header img {
+    width: 50px;
+    border-radius: 100px;
+}
+.left-header-textCon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 100%;
+}
+.left-header-text {
+    width: 100%;
+    text-align: center;
+    font-size: 31px;
+    font-weight: 600;
+    color: rgba(13, 14 ,53, .6);
+}
+.left-header-textCon img {
+    width: 100%;
+}
+/*right-header-section*/
+.signup-right-section {
+    background-color: rgb(244, 244, 245, .5);
+    width: 100%;
+    border-radius: 15px;
+}
+.signup-credential-con {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-top: 30px;
+}
+.right-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.right-header-greeting {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    align-items: center;
+    font-weight: 500;
+    color: rgba(48, 48, 48, .7);
+    font-size: 31.5px;
+}
+.greeting-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.greeting-container img {
+    display: flex;
+    width: 60px;
+    border-radius: 500px;
+    padding: 7px;
+    background-color: #fff;
+}
+.right-header-row1 {
+   
+}
+.right-header-row1 label {
+    font-weight: 700;
+    font-size: 29px;
+    border-bottom: 3px solid lightgray;
+}
+.invalidation-prompt {
+    display: none;
+    width: 100%;
+    padding: 14.5px 10px;
+    border: 1px solid rgb(226, 226, 226);
+    background-color: rgba(129, 238, 96, 0.2);
+
+}
+/*JS STYLING*/
+.invalidation-prompt.unauthorized {
+    display: flex;
+    background-color: rgba(233, 198, 101, 0.1);
+}
+.invalidation-prompt.authorized {
+    display: flex;
+    background-color: rgba(157, 221, 138, 0.1);
+}
+.invalidation-section {
+    display: grid;
+    grid-template-columns: .9fr 1.2fr;
+    justify-content: space-between;
+    column-gap: 18px;
+}
+.authorization-img {
+    width: 100%;
+    height: 140px;
+    border-radius: 300px;
+    padding: 1px 10px;
+    background-color: #fff;
+}
+.invalidation-guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 7px;
+}
+.invalidation-textguides {
+    display: flex;
+    row-gap: 6px;
+    flex-direction: column;
+}
+.invalidation-guideT {
+    color: rgba(48, 48, 48, .8);
+    font-size: 20px;
+    font-weight: 600;
+}
+.invalidation-guideS {
+    text-align: left;
+    font-size: 15.5px;
+    color: rgba(48, 48, 48, .6);
+}
+.invalidation-guideS label {
+    color:rgba(48, 48, 48, .8);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.admin-email {
+    font-size: 15.5px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 3px;
+}
+.close-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#close-invalidation {
+    font-size: 16.5px;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(13, 14 ,53);
+    border: none;
+    padding: 4.5px 16px;
+    border-radius: 5px;
+}
+#link-to-login {
+    font-size: 15.5px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(145, 128, 240, .9);
+    border: 1px solid rgba(145, 128, 240, .4);
+    padding: 5px 8.7px;
+    border-radius: 4px;
+}
+.link-to-loginT {
+    text-decoration: underline;
+}
+.right-header-row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 12px;
+    line-height: 1.3;
+}
+.create-acc-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(145, 128, 240, .9);
+}
+.row2-seperator {
+    height: 20px;
+    padding: 0 1px;
+    background-color: rgba(139, 139, 139, 0.1);
+}
+.forget-password-link {
+    font-size: 16px;
+    color: rgba(13, 14, 53, .4);
+    font-weight: 600;
+}
+.create-acc-link:hover, .forget-password-link:hover {
+    text-decoration: underline;
+}
+.signup-inputs-con {
+    display: flex;
+    flex-direction: column;   
+    row-gap: 12px;
+}
+.signup-field-containers {
+    display: flex;
+    column-gap: 15px;
+    row-gap: 30px;
+}
+.signup-column-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.5px;
+    width: 100%;
+}
+.peek-password-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.reveal-password-btn {
+    position: absolute;
+    right: -7px;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: transparent;
+}
+.reveal-password-btn img {
+    width: 20px;
+}
+#referal-code-con {
+    display: none;
+}
+.field-label {
+    color: rgba(48, 48, 48, .61);
+}
+.field-input {
+    border: 1px solid rgba(48, 48, 48, .2);
+    padding: 7px 0;
+    border-radius: 6px;
+    padding-left: 12px;
+    font-size: 16.2px;
+    color: rgba(13, 14, 53, .9);
+    font-weight: 600;
+    width: 100%;
+}
+.field-input.active {
+    border: 1px solid rgb(253, 68, 68, .6);
+}
+.validation-error {
+    color: rgb(253, 68, 68);
+}
+.submit-container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.submit-container button {
+    background-color: rgba(13, 14, 53);
+    border-radius: 4.5px;
+    color: rgb(255, 255, 255, .8);
+    font-size: 17.2px;
+    border: none;
+    padding: 6.5px 11px;
+}

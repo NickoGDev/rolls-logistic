@@ -1,0 +1,191 @@
+
+  .header-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 4;
+  }              
+  .header-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-top: 30px;
+    row-gap: 44px;
+  }
+  .header-components {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  
+  }
+  .header-campaign-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .campaign-title {
+    display: inline-block;
+    color: rgba(255, 255, 255, .9);
+    font-weight: 400;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 720px;
+    background-color: rgba(238, 238, 238, 0.1);
+    border-radius: 5px;
+    padding: 30px 12px;
+    line-height: 1.1;
+    transform: skewX(-13deg); 
+  }
+  .header-left-section {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+  }
+  .logo-font {
+    display: flex;
+    align-items: center;
+    column-gap: 7.2px;
+    background-color: rgba(238, 238, 238, 0.1);
+    padding: 3.5px 15px;
+    border-radius: 2px;
+    transform: skewX(-13deg); 
+  }
+  .logo-font img.logistic-logo{
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  .logo-font label{
+    font-size: 33px;
+    color: rgba(255, 255, 255);
+    font-weight: 700;
+  }
+  .services-navigation {
+    display: flex;
+    column-gap: 18px;
+    font-size: 18.5px;
+    font-weight: 400;
+  }
+  .services-navigation a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);
+    transition: 0.30s;
+  }
+  .services-navigation a.login-now{
+    background-color: rgba(120, 207, 86, 0.8);
+    padding: 7px 20px;
+    font-size: 15.7px;
+    font-weight: 600;
+    border-radius: 400px;
+  }
+  .services-navigation a.register-now{
+    background-color: rgba(238, 238, 238, 0.1);
+    border:1px solid rgb(236, 236, 236);
+    padding: 7px 20px;
+    font-size: 15.7px;
+    font-weight: 600;
+    border-radius: 400px;
+  }
+  .services-navigation a:hover{
+    text-decoration: underline;
+  }
+  /*HEADER-RIGHT-SECTION*/
+  .header-right-section {
+    display: flex;
+    align-items: center;
+  }
+  .personalization-container img{
+    width: 28px;
+  }
+  /*HEADER-CENTER-HEADINGS*/
+  .header-center-headings {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    width: 29%;
+    padding: 15px;
+  }
+  .campaign-section {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 650px;
+    z-index: 1;
+    /* margin-top: 400px; */
+ }
+ .campaign-section img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(45%); 
+  }
+  .tracking-header {
+    font-weight: 600;
+    color: rgb(48, 48, 48);
+    font-size: 18px;
+  }
+  .tracking-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 7.5px;
+  }
+  .overlay-location {
+    position: relative;
+  }
+  .location-logo {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translate(-50%,-50%);
+  }
+  .location-logo img {
+    width: 23px;
+    height: 18px;
+  }
+  .tracking-input input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    height: 38px;
+    padding-left: 32px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .tracking-input input::placeholder {
+    font-size: 16px;
+  }
+  .tracking-button-container {
+    display: flex;
+  }
+  .tracking-button-container button {
+    color: rgb(255, 255, 255, .8);
+    font-weight: 600;
+    font-size: 15.5px;
+    background-color: rgba(13, 14, 53, .8);
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: rgb(15, 16, 53);
+    border: none;
+  }
+  .tracking-button-containerbutton:active {
+    opacity: .8;
+  }

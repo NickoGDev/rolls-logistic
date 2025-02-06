@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- BOOSTRAP LINK -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- AJAX CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../../../STYLES/OVERALL/overall.css">
+        <link rel="stylesheet" href="../../../STYLES/ADMIN/header/header.css">
+        <link rel="stylesheet" href="../../../STYLES/ADMIN/admin-home/admin-home.css">
+        <!-- EMAIL.JS LINK -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <!-- FONTS LINK -->
+        <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500;600;700;800&family=Assistant:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<title>admin home</title>
+<body>
+    <!-- HEADER-CONTAINER -->
+    <div class="header-container">
+        <div class="header-sections">
+            <div class="header-components">
+                <div class="header-left-section">
+                    <div class="logo-font">
+                        <img class="logistic-logo" src="../../../IMAGES/GENERAL/logo.png" alt="">
+                        <label for="">Rolls</label>
+                    </div>
+                    <div class="header-services">
+                        <div class="services-navigation">
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right-section">
+                    <div class="personalization-container">
+                        <img src="../../../IMAGES/GENERAL/account.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMG UPLOADER -->
+    <div class="body-container">
+        <div class="body-section">
+        <div class="left-section">
+            <div class="left-sidebar-container">
+              <div class="left-sidebar-contents">
+                <!-- left-side-bar-contents -->
+              </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="main-heading" for="">
+                <img class="main-heading-img" src="../../../IMAGES/GENERAL/setting-icon.png" alt="">
+                <label class="main-headingT" for="">
+                    Account Settings
+                </label>
+            </div>
+            <div class="right-contents-seperator">
+                <div class="contents-navigation-container" id="content-navigation-container">
+                    <div class="contents-navigation-section" id="select-navigation-profile">
+                        <label class="content-navigation">
+                            My Profile
+                        </label>
+                    </div>
+                    <div class="contents-navigation-section" id="select-navigation-security">
+                        <label class="content-navigation">
+                            Security
+                        </label>
+                    </div>
+                    <div class="contents-navigation-section">
+                        <label class="content-navigation">
+                            Notifications
+                        </label>
+                    </div>
+                    <div class="contents-navigation-section">
+                        <label class="content-navigation">
+                            My profile
+                        </label>
+                    </div>
+                </div>
+                <div class="right-section-seperator" id="navigation-controller-profile">
+                      <div class="profile-section">
+                        <!-- <div class="header1" for="">My profile</div> -->
+                        <div class="upload-profile">
+                            <div class="upload-profile-top">
+                                <div class="image-con">
+                                    <img class="profile-img" id="img-display" src="" alt="">
+                                    <label class="edit-info-con" for="img-input" class="upload-profile-center">
+                                        <img class="edit-section" id="edit-section" src="../../../IMAGES/GENERAL/edit-icon.png" alt="">
+                                        <div class="header-stealth2" for="">Change profile...</div>
+                                        <input type="file" id="img-input" accept="image/*">
+                                    </label>
+                                </div>
+                                <link rel="stylesheet" href="../../../IMAGES/ADMIN/profile-picture">
+                                <div class="profile-name-credential">
+                                    <div class="profile-name-container">
+                                        <label class="profile-name" id="profile-first-name" for=""></label>
+                                        <label class="profile-name" id="profile-last-name" for=""></label>
+                                    </div>
+                                    <div class="position-emailCon">
+                                        <div class="position-container">
+                                            <div class="position-container-bubble">
+                                                <img class="position-icon" src="../../../IMAGES/GENERAL/admin-icon.png" alt="">
+                                                <label class="profile-position" id="profile-position" for="">Supervisor</label>
+                                            </div>
+                                        </div>
+                                        <label class="profile-email" id="profile-email" for="">nickogeronaga16@gmail</label>
+                                    </div>
+                                </div>
+                                <div class="upload-button">
+                                    <div class="">
+                                      
+                                    </div>
+                                    <!-- <label class="upload-error" id="upload-error" for="">No image selected.</label> -->
+                                </div>
+                                <div class="upload-button" id="upload-button">
+                                    <div class="upload-button-section">
+                                        <label for="" class="upload-buttonT">Upload</label> 
+                                        <label class="upload-error" id="upload-error" for=""></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal-information-container">
+                        <div class="header1" for="">
+                            Personal information
+                            <!-- <img class="edit-section" id="edit-section" src="../../../IMAGES/GENERAL/edit-icon.png" alt=""> -->
+                        </div>
+                            <!-- PERSONAL INFORMATION -->
+                            <div class="personal-information-lot">
+                                <div class="info-data-edit-con">
+                                    <div class="personal-datas">
+                                        <div class="personal-dataCon">
+                                            <label class="label-text" for="">First name</label>
+                                            <label class="personal-data-info" for="" id="admin-first-name"></label>
+                                        </div>
+                                        <div class="personal-dataCon">
+                                            <label class="label-text" for="">Last name</label>
+                                            <label class="personal-data-info" for="" id="admin-last-name"></label>
+                                        </div>
+                                        <div class="personal-dataCon">
+                                            <label class="label-text" for="">Email</label>
+                                            <label class="personal-data-info" for="" id="admin-email"></label> 
+                                        </div>
+                                        <div class="personal-dataCon">
+                                            <label class="label-text" for="">Mobile</label>
+                                            <label class="personal-data-info" for="" id="admin-mobile"></label> 
+                                        </div>
+                                        <div class="personal-dataCon">
+                                            <label class="label-text" for="">Country</label>
+                                            <label class="personal-data-info" for="" id="admin-country"></label> 
+                                        </div>
+                                        <div class="personal-dataCon">
+                                            <label class="label-text" for="">City</label>
+                                            <label class="personal-data-info" for="" id="admin-city"></label> 
+                                        </div>
+                                    </div>
+                                    <div class="edit-info-con"  data-bs-toggle="modal" data-bs-target="#edit-prompt">
+                                        <img class="edit-section" id="edit-section" src="../../../IMAGES/GENERAL/edit-icon.png" alt="">
+                                        <label class="header-stealth2" for="">Edit info</label>
+                                    </div>
+                                    <div class="modal fade" id="edit-prompt" tabindex="-1" aria-labelledby="edit-promptLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg edit-modal-size">
+                                          <div class="modal-content modal-header-body">
+                                            <div class="edit-header-heading">
+                                              <div class="header-admin-img">
+                                                <img class="admin-edit-img" src="../../../IMAGES/ADMIN/admin-general/admin-edit-image.jpg" alt="">
+                                                <h5 class="modal-title heading-title" id="edit-promptLabel">Edit personal information</h5>
+                                              </div>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="form-edit">
+                                              <form class="edit-personal-container">
+                                                    <div class="edit-personal-sectionR">
+                                                        <div class="edit-personal-input">
+                                                            <label class="label-text">First name</label>
+                                                            <div class="input-error-container">
+                                                                <input class="edit-info-input" id="new-first-name">
+                                                                <label class="error-editT" id="first-name-error" for=""></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="edit-personal-input">
+                                                            <label class="label-text">Last name</label>
+                                                            <div class="input-error-container"> 
+                                                                <input class="edit-info-input" id="new-last-name">
+                                                                <label class="error-editT" id="last-name-error" for=""></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="edit-personal-input">
+                                                            <label class="label-text">Email</label>
+                                                            <div class="input-error-container"> 
+                                                                <input class="edit-info-input" id="new-email">
+                                                                <label class="error-editT" id="email-error" for=""></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="edit-personal-sectionF">
+                                                        <div class="edit-personal-input">
+                                                            <label class="label-text">Mobile</label>
+                                                            <div class="input-error-container"> 
+                                                                <input class="edit-info-input" id="new-mobile">
+                                                                <label class="error-editT" id="mobile-error" for=""></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="edit-personal-input">
+                                                            <label class="label-text">Country</label>
+                                                            <div class="input-error-container"> 
+                                                                <select class="selectpicker edit-info-input" data-dropup-auto="false" id="new-country" title="Choose options..." data-live-search="true">
+                                                                        <option disabled selected style="display: none;">Select country</option>
+                                                                </select>
+                                                                <label class="error-editT" id="country-error" for=""></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="edit-personal-input">
+                                                            <label class="label-text">City</label>
+                                                            <div class="input-error-container"> 
+                                                                <input class="edit-info-input" id="new-city">
+                                                                <label class="error-editT" id="city-error" for=""></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                              </form>
+                                            </div>
+                                            <div class="update-btn">
+                                                <button class="submit-cancel" data-bs-dismiss="modal">Close</button>
+                                                <button id="update-information-btn" class="submit-edit-btn" data-bs-dismiss="">Update</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                        <!--SECURITY NAVIGATION -->
+                        <div class="security-navigation-section" id="navigation-controller-security">
+                            <div class="change-password-container">
+                                <div class="change-password-section">
+                                    <form class="changePass-left-section">
+                                        <div class="changePass-left-section-lot">
+                                            <img class="img-request-password" src="../../../IMAGES/GENERAL/admin-request-pass-img.jpg" alt="">
+                                            <div class="request-header">
+                                                <div class="request-heading">
+                                                    <label class="request-headerTM" for="">Forgot your password?</label>
+                                                    <label class="request-headerTS" for="">Receive an email passcode for your account,</label>
+                                                    <label class="request-headerTS" for="">note that your password would change</label>
+                                                    <label class="request-headerTS" for="">with generated passcode.</label>
+                                                </div>
+                                                <div class="request-password-btnCon" id="request-password">
+                                                    <label type="button" data-bs-toggle="modal" data-bs-target="#confirmationRetrieveCode" class="request-password-btn" for="">Change your password</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="change-passwordInput-container">
+                                <div class="change-passwordInput-lot">
+                                    <div class="change-passwordInput-lot-header">
+                                        <img class="admin-icon-change-pass addSpace" src="../../../IMAGES/GENERAL/admin-icon.png" alt="">
+                                        <label class="request-headerTM add-space-top" for="">Admin change password</label>
+                                    </div>
+                                    <form class="change-passwordInput-lot-section">
+                                        <div class="change-password-inputCon">
+                                            <label class="input-passcode-label" for="">Enter email passcode</label>
+                                            <input class="input-passcode" id="email-passcode" type="text">
+                                            <div class="change-password-error" id="passcode-error"></div>
+                                        </div>
+                                        <div class="change-password-inputCon">
+                                            <label class="input-passcode-label" for="">new password</label>
+                                            <input class="input-passcode" id="new-password" type="password">
+                                            <div class="change-password-error" id="new-password-error"></div>
+                                        </div>
+                                        <div class="change-password-inputCon">
+                                            <label class="input-passcode-label" for="">Confirm new password</label>
+                                            <input class="input-passcode" id="confirm-password" type="password">
+                                            <div class="change-password-error" id="confirm-password-error"></div>
+                                        </div>
+                                        <div class="change-password-buttonCon">
+                                            <button class="change-password-submit" type="submit" id="change-password-submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <!-- MODAL PROMPTS -->
+        <!--CONFIRMATION BUTTON FOR EMAIL SECURITY BUTTON-->
+        <div class="modal fade" id="confirmationRetrieveCode" data-bs-keyboard="false" tabindex="-1" aria-labelledby="confirmationRetrieveCodeLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content request-password-promptContainer">
+                <div class="request-password-header">
+                    <div class="request-password-con2">
+                        <label class="request-password-headerM">Do you wish to change your password?</label>
+                        <label class="request-password-headerS">By accepting the terms you receive email authenticator.</label>
+                    </div>  
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="request-password-footer">
+                    <!-- Button trigger modal for confirmation of retrieval code password-->
+                    <button class="change-password-buttonS" type="button" id="request-password-btn" data-bs-toggle="modal" data-bs-target="#success-email-authenticator"> I Agreed To Terms.</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- PROMPT IF PASSWORD SUCCESSFULLY SENT TO GMAIL -->
+        <div class="modal fade" id="success-email-authenticator" tabindex="-1" aria-labelledby="success-email-authenticator" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content successful-changePass-con">
+                <div class="successful-changePass-prompt">
+                    <img class="password-successsfully-changed" src="../../../IMAGES/GENERAL/password-successfully-changed.jpg" alt="">
+                    <div class="successfuly-changePass-promptH">
+                        <label class="request-password-headerM"  id="exampleModalLabel">Yay, Password successfully change,</label>
+                        <label class="request-password-headerS"  id="exampleModalLabel">your email would receive passcode.</label>
+                    </div>
+                </div>
+                <div class="successful-changePass-prompt-footer">
+                  <button type="button" class="successful-changePass-close" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="../../../JAVASCRIPT/ADMIN/Madmin-home-page/account-setting.js"></script>
+</body>
+
+</html>

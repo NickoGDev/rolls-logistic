@@ -1,0 +1,62 @@
+.equal-horizontalE {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 100%;
+    margin-top: 25px;
+    column-gap: 20px;
+    height: auto;
+}
+.equal-horizontalE-header {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(48, 48, 48);
+}
+.equal-horizontalE-textS {
+    font-size: 18.7px;
+    color: rgba(48, 48, 48, .9);
+}
+/*left*/
+.equal-horizontalE-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 100%;
+}
+.equal-horizontal-paragraph {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    width: 100%;
+}
+.equal-horizontal-buttonC {
+    display: flex;
+    width: 100%;
+}
+.equal-horizontal-buttonC a{
+    background-color: rgba(13, 14, 53, .9);    
+    color: rgba(255, 255, 255, .8);
+    padding: 9px 16px;
+    border-radius: 4px;
+}
+/*right*/
+.equal-horizontalE-right {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.equal-horizontalE-right img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5px;
+}
+.equal-horizontalE-listSC {
+    padding-left: 35px;
+    color: rgba(48, 48, 48, .9);
+    font-size: 17.8px;
+    margin-top: 20px;
+}
+.equal-horizontalE-listSC li{
+    list-style-type: circle;
+    margin-bottom: 8px;
+}

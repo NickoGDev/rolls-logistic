@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <!-- AJAX CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../../STYLES/OVERALL/overall.css">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500;600;700;800&family=Assistant:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../STYLES/ADMIN/Smember-signup/Smember-signup.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="body-section">
+            <div class="upper-section">
+                <div class="circular-container">
+                    <div class="logo-container">
+                        <img class="icon-logo" src="../../../IMAGES/GENERAL/logo.png" alt="">
+                        <label for="">Rolls</label>
+                    </div>
+                </div>
+                <div class="signup-header">
+                    <div class="heading-section">
+                        <div class="greeting-container">
+                            <img class="img-member-greeting" src="../../../IMAGES/GENERAL/staff-signup-greeting.png" alt="">
+                        </div>
+                        <label for="" class="heading-t">Member signup</label>
+                    </div>
+                    <div class="secondary-t-section">
+                        Apply for fast growing logistic company.
+                    </div>
+                    <a class="login-link" href="../../../PHP-MODULES/ADMIN/Smember-login/Smember-login.html">Already have an account?</a>
+                    <div class="signup-duplicate-email" id="prompt-duplicate-email" prompt-trigger="<?= $signup_state ?>">
+                        <div class="signup-prompt-seperator">
+                            <div class="signup-left-section">
+                                <img class="img-signup-state" src="../../../IMAGES/GENERAL/warning-icon.png" alt="">
+                                <label class="invalid-inputs-t" id="invalid-inputs-t" for="">
+                                    <span class="signup-highlight">Email</span> is already existing.</span>
+                                </label>
+                            </div>
+                            <img class="close-icon" id="close-icon-email" src="../../../IMAGES/GENERAL/close-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="signup-duplicate-phone" id="prompt-duplicate-phone">
+                        <div class="signup-prompt-seperator">
+                            <div class="signup-left-section">
+                                <img class="img-signup-state" src="../../../IMAGES/GENERAL/warning-icon.png" alt="">
+                                <label class="invalid-inputs-t" id="invalid-inputs-t" for="">
+                                    <span class="signup-highlight">Phone</span> is already existing.</span>
+                                </label>
+                            </div>
+                            <img class="close-icon" id="close-icon-phone" src="../../../IMAGES/GENERAL/close-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="signup-success" id="prompt-success">
+                        <div class="signup-prompt-seperator">
+                            <div class="signup-left-section">
+                                <img class="img-signup-state" src="../../../IMAGES/GENERAL/confirm.png" alt="">
+                                <label class="invalid-inputs-t" id="invalid-inputs-t" for="">
+                                    <span class="signup-highlight">Register completed</span> <a href="../../../PHP-MODULES/ADMIN/Smember-login/Smember-login.html" class="login-portal">Login now!</a>.
+                                </label>
+                            </div>
+                            <img class="close-icon" id="close-icon-success" src="../../../IMAGES/GENERAL/close-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-lot">
+                <form method="POST" id="signup-form" class="body-seperator">
+                    <!-- CATEGORY-1-SECTION -->
+                    <div class="upper-category-1">
+                        <label class="field-category" for="">1. Personal information</label>
+                        <div class="upper-category-1-row">
+                            <!-- upper-category-1-row-1 -->
+                            <div class="upper-category-1-row-1">
+                                <div class="field-container">
+                                    <div class="input-fields">
+                                        <label class="label-fields" for="">First name *</label>
+                                        <div class="input-container" id="border-first-name">
+                                            <input autocomplete="off" class="text-box" type="text" id="first-name" name="first-name" placeholder="Enter first name">
+                                        </div>
+                                    </div>
+                                    <div class="error-input" id="first-name-error"></div>
+                                </div>
+                                <div class="field-container">
+                                    <div class="input-fields">
+                                        <label class="label-fields" for="">Last name *</label>
+                                        <div class="input-container" id="border-last-name">
+                                            <input class="text-box" type="text" id="last-name" name="last-name" placeholder="Enter last name">
+                                        </div>
+                                    </div>
+                                    <div class="error-input" id="last-name-error"></div>
+                                </div>
+                                <div class="field-container">
+                                    <div class="input-fields">
+                                        <label class="label-fields" for="">Middle Initial</label>
+                                        <div class="input-container" id="border-middle-initial">
+                                            <input class="text-box" type="text" id="middle-initial" name="middle-initial" placeholder="optional">
+                                        </div>
+                                    </div>
+                                    <div class="error-input" id="middle-initial-error"></div>
+                                </div>
+                            </div>
+                            <!-- upper-category-1-row-2 -->
+                            <div class="upper-category-1-row-2">
+                                <div class="field-container">
+                                    <div class="input-fields">
+                                        <label class="label-fields" for="">Email *</label>
+                                        <div class="input-container" id="border-email">
+                                            <input class="text-box" type="text" id="email" name="email" placeholder="ex: johndoe@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="error-input" id="email-error"></div>
+                                </div>
+                                <div class="field-container">
+                                    <div class="input-fields">
+                                        <label class="label-fields" for="">Password *</label>
+                                        <div class="input-container" id="border-password">
+                                            <div class="password-container" id="password-container">
+                                                <input class="text-box" type="password" id="password" name="password">
+                                                <div id="password-overlay">
+                                                    <img id="peek-password" src="../../../IMAGES/GENERAL/close-eye.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="error-input" id="password-error"></div>
+                                    <div class="constraint-password-con" id="constraint-password-con">
+                                        <div class="constraint-password-seperator">
+                                            <div class="constraint-password-section">
+                                                <div class="constraint-password-header">
+                                                    <img class="password-meter-icon" src="../../../IMAGES/GENERAL/requirement-icon.png" alt="">
+                                                   <label for="">Password requirements</label>
+                                               </div>
+                                               <div class="constraint-password-requirements">
+                                                    <div class="constraint-img-txt">
+                                                        <img id="valid-password-length" src="../../../IMAGES/GENERAL/check-img.png" alt="">
+                                                        <label class="password-requirements" id="password-length" for="">* Must contain atleast 6 characters.</label>
+                                                    </div>
+                                                    <div class="constraint-img-txt">
+                                                        <img id="valid-password-special" src="../../../IMAGES/GENERAL/check-img.png" alt="">
+                                                         <label class="password-requirements" id="password-special" for="">* Must contain atleast 1 special characters.</label>
+                                                    </div>
+                                                    <div class="constraint-img-txt">
+                                                        <img id="valid-password-upper-lower" src="../../../IMAGES/GENERAL/check-img.png" alt="">
+                                                        <label class="password-requirements" id="password-upper-lower" for="">* Must contain atleast 1 uppercase and lowercase.</label>
+                                                    </div>
+                                                    <div class="constraint-img-txt">
+                                                        <img id="valid-password-numeric" src="../../../IMAGES/GENERAL/check-img.png" alt="">
+                                                        <label class="password-requirements" id="password-numeric" for="">* Must contain atleast 1 number.</label>
+                                                    </div>
+                                               </div>
+                                               <hr class="seperator-hr">
+                                               <div class="validity-meter">
+                                                    <div class="password-validity-header">
+                                                        <div class="password-txt-imageH">
+                                                            <img class="password-meter-icon" src="../../../IMAGES/GENERAL/password-meter.png" alt="">
+                                                            <label for="" class="heading-validity">Password validity meter</label>
+                                                        </div>
+                                                        <label for="" id="meter-display"></label>
+                                                    </div>
+                                                    <div class="validity-metrics-container">
+                                                        <div class="color-meter" id="first-bar"></div>
+                                                        <div class="color-meter" id="second-bar"></div>
+                                                        <div class="color-meter" id="third-bar"></div>
+                                                    </div>
+                                               </div>
+                                               <div id="close-password-requirement"><img src="../../../IMAGES/GENERAL/close.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upper-category-1-row-2">
+                                <div class="field-container">
+                                    <div class="input-fields">
+                                        <label class="label-fields" for="">Country *</label>
+                                        <div class="input-container" id="border-country">
+                                            <select class="text-box" name="country" id="country">
+                                                <option disabled selected style="display: none;">Select country</option>
+                                                <!-- <?= $all_countries ?> -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="error-input" id="country-error"></div>
+                                </div>
+                                <div class="field-container">
+                                    <div class="input-fields">
+                                        <label class="label-fields" for="">City *</label>
+                                        <div class="input-container" id="border-city">
+                                            <input class="text-box" type="city" id="city" name="city">
+                                        </div>
+                                    </div>
+                                    <div class="error-input" id="city-error"></div>
+                                </div>
+                            </div>
+                            <div class="upper-category-1-row-2">
+                                <div class="field-container">
+                                    <div class="input-fields">
+                                        <label class="label-fields" for="">Address *</label>
+                                        <div class="input-container" id="border-address">
+                                            <input class="text-box" type="text" id="address" name="address">
+                                        </div>
+                                    </div>
+                                    <div class="error-input" id="address-error"></div>
+                                </div>
+                            </div>
+                            <div class="upper-category-1-row-2">
+                                <div class="field-container">
+                                    <div class="input-fields">
+                                        <label class="label-fields" for="">Phone number *</label>
+                                        <div class="input-container" id="border-phone">
+                                            <input class="text-box" type="tel" id="phone-number" name="phone-number" maxlength="11" placeholder="ex: 092452991201">
+                                        </div>
+                                    </div>
+                                    <div class="error-input" id="phone-error"></div>
+                                </div>
+                                <div class="three-col">
+                                    <div class="field-container">
+                                        <div class="input-fields">
+                                            <label class="label-fields" for="">Age*</label>
+                                            <div class="input-container" id="border-age">
+                                                <input class="text-box" type="text" id="age" name="age" min="1" maxlength="2" placeholder="ex: 18">
+                                            </div>
+                                        </div>
+                                        <div class="error-input" id="age-error"></div>
+                                    </div>
+                                    <div class="field-container">
+                                        <div class="input-fields">
+                                            <label class="label-fields" for="">Sex*</label>
+                                            <div class="input-container" id="border-sex">
+                                                <select class="text-box" name="sex" id="sex">
+                                                    <option disabled selected style="display:none">*Choose sex</option>
+                                                    <option class="gender-option" value="Male">Male</option>
+                                                    <option class="gender-option" value="Female">Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="error-input" id="sex-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credential-guidelines">
+                        <div class="credential-section">
+                            <div class="credential-upper-section">
+                                <img class="admin-signup-img" src="../../../IMAGES/GENERAL/admin-submit-img.png" alt="">
+                                <label class="credential-heading" for=""> Credential submision</label>
+                            </div>
+                            <div class="credential-lower-section">
+                                <div class="credential-guidelines-section">
+                                    <div class="instructions-guidelines">
+                                        <img src="../../../IMAGES/GENERAL/admin-signup-info.png" alt="">
+                                        <label class="submit-instruction" for="">Applicant must send their Resume or CV to <span class="admin-email">rollsLogistics@gmail.com</span></label>
+                                    </div>
+                                    <label class="notice-guideline">Failure to comply with the requirements lead to application disqualification.</label>
+                                </div>
+                                <div class="declaration-container">
+                                    <input type="checkbox" id="declaration-checkbox">
+                                    <label for="">I hereby that I passed my Resume and CV with the correct information.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-container">
+                        <button type="submit" id="submit" name="submit">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../../../JAVASCRIPT/ADMIN/Smember-signup/Smember-signup.js"></script>
+</body>
+
+</html>

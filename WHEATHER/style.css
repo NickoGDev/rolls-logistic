@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    color: rgba(48, 48, 48);
+}
+input {
+    outline: none;
+}
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2%;
+    width: 100%;
+    height: 100dvh;
+}
+.weather-app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10.5px;
+    padding: 70px 15px;
+    border-radius: 18px;
+    background-color: rgba(62, 65, 228, 0.1);
+    text-align: center;
+}
+.input-country {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.input-country input {
+    width: 60%;
+    padding: 8px 12px;
+    font-size: 23px;
+    border: 1px solid rgb(172, 172, 172);
+}
+.input-country input::placeholder {
+    font-size: 22px;
+    color: rgb(48, 48, 48, .4);
+    font-weight: 400;
+}
+.city-date-con {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 12px;
+}
+.weather-city {
+    display: flex;
+    line-height: 1.5;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(13, 14, 53, .8);
+    border-bottom: 2px dotted rgba(62, 65, 228, 0.1);
+    width: 100%;
+}
+.majorData-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2px;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 5px 15px;
+    border-radius: 3.5px;
+}
+.city-clock-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    width: 100%;
+    border-radius: 100px;
+    padding: 2px 0px;
+}
+.current-time {
+    font-size: 14.5px;
+    font-weight: 800;
+    color: rgba(13, 14, 53, .7);
+}
+.current-date {
+    text-align: left;
+    color: rgba(13,14 ,53, .6);
+    font-size: 14.7px;
+    font-weight: 500;
+}
+.temperature {
+    font-weight: 400;
+    font-size: 38px;
+    color: rgba(13, 14, 53);
+}
+.temperature-icon-valueCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15.5px;
+}
+.weather-icon {
+    width: 40px;
+    background-color: rgba(31, 31, 63, 0.1);
+    border-radius: 100px;
+    padding: 1px 2px;
+}
+.row-weather-dataCon {
+    display: flex;
+    align-items: center;
+    column-gap: 17.5px;
+}
+.weather-secon-data {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 3.2px;
+    font-size: 13.1px;
+    font-weight: 500;
+    color: rgba(48, 48, 48, .7);
+}
+.weather-description {
+    font-size: 14.2px;
+    color: rgba(48, 48, 48, .9);
+    font-weight: 700;
+}

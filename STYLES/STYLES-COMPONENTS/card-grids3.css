@@ -1,0 +1,45 @@
+
+/*CARD GRID COMPONENTS*/
+.card-grid {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.card-grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    column-gap: 20px;
+}
+.card-grid-contents {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-bottom: 12px;
+    transition: .18s all;
+}
+.card-grid-contents:hover {
+    box-shadow: 0 0 12px rgb(204, 204, 204);
+}
+.card-grid-contents img {
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.card-grid-row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 12px 24px;
+}
+.card-grid-textH {
+    color: rgba(48, 48, 48);
+    font-weight: 500;
+    font-size: 23.5px;
+}
+.card-grid-textS {
+    color: rgba(48, 48, 48, .9);
+    font-weight: 400;
+    font-size: 17.8px;
+}

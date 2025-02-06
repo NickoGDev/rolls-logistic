@@ -1,0 +1,245 @@
+.signup-space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100dvh;
+}
+.form-container {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.01), 0 2px 10px 0 rgba(0, 0, 0, 0.13);
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 9px;
+}
+.form-header {
+  display: flex;
+  justify-content: center;
+}
+.form-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+  line-height: 0.7;
+}
+.form-header-text img.signup-image {
+  width: 140px;
+}
+.form-text-guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+  margin-top: -20px;
+}
+
+.form-text-guide label {
+  display: flex;
+  color: rgb(63, 63, 63);
+  font-weight: 600;
+  font-size: 35px;
+}
+.form-text-guide p {
+  display: flex;
+  color: rgba(66, 66, 66, 0.7);
+  font-weight: 500;
+  font-size: 20px;
+}
+.secondary-text {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.form-text-guide a {
+  text-decoration: none;
+  color: rgba(145, 128, 240);
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+/*VALIDATION-GUIDE*/
+.validation-guide {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+.validation-success {
+  display: none;
+  column-gap: 12px;
+  width: 100%;
+}
+
+.validation-concern {
+  display: none;
+  width: 100%;
+}
+.validation-constraint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(241, 167, 167);
+  background-color: rgba(252, 155, 155, 0.3);
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px 10px;
+  color: rgb(129, 39, 39);
+  font-weight: 600;
+  font-size: 17.2px;
+  cursor: pointer;
+}
+.prompt-text {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+  font-size: 16px;
+}
+.validation-success-prompt {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid rgb(150, 231, 157);
+  background-color: rgba(125, 206, 59, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  padding: 7px 10px;
+  color: rgb(70, 167, 40);
+  font-weight: 600;
+  font-size: 17.2px;
+}
+.prompt-text {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+  width: 100%;
+}
+.login-link {
+  display: flex;
+  align-items: center;
+  font-size: 16.7px;
+  width: 50%;
+  column-gap: 7px;
+}
+.login-link label {
+  font-weight: 500;
+  color: rgb(70, 167, 40, .7);
+}
+.login-link a {
+  color: rgba(145, 128, 240);
+  font-weight: 600;
+}
+.prompt-text img {
+  width: 35px;
+}
+.close-icon {
+  width: 25px;
+}
+.prompt-link {
+  display: flex;
+  column-gap: 5px;
+}
+.validation-text {
+  font-weight: 600;
+}
+.alink {
+  color: rgba(145, 128, 240, 1);
+  font-weight: 700;
+}
+/*Signup-success*/
+.alert-success .bi {
+  width: 32px;
+  height: 32px;
+  fill: rgb(37, 233, 20);
+}
+/*Form-field*/
+.form-field {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  padding-bottom: 20px;
+  row-gap: 8px;
+}
+.form-field-a {
+  display: flex;
+  width: 100%;
+  column-gap: 2%;
+}
+.form-contents {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  width: 100%;
+}
+.password-overlay {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.password-overlay input {
+  width: 100%;
+  padding-left: 12px;
+}
+.peek-password {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  top: 50%;
+  right: 1px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.peek-password img {
+  width: 24px;
+}
+.form-contents label {
+  color: rgba(48, 48, 48, .7);
+  font-weight: 500;
+  font-size: 16.1px;
+}
+.form-contents p.signup-error {
+  color: rgb(253, 68, 68);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+.form-contents input {
+  border: none;
+  box-shadow: 0 0 1px rgb(0, 0, 0);
+  padding-left: 12px;
+  height: 37px;
+  font-weight: 500;
+  font-size: 16.9px;
+  color: rgb(36, 36, 36);
+}
+.form-contents input:focus {
+  border: 1px solid #1b74e5;
+}
+.form-contents input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(189, 189, 189);
+}
+.submit-button {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+}
+.submit-button button {
+  border: none;
+  background-color: rgb(15, 16, 53);
+  color: #fff;
+  font-size: 16.7px;
+  font-weight: 300;
+  padding: 6px 7px;
+  border-radius: 3px;
+}

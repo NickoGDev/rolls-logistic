@@ -1,0 +1,64 @@
+    /* .service-body-Container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .service-body-section {
+        display: flex;
+        width: 80%;
+        margin-top: 40px;
+    }
+    .transit-services-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .transit-text-guide {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        width: 60%;
+        line-height: 1.4;
+    }
+    .transit-headerType {
+        font-size: 42px;
+        color: rgba(48, 48, 48);
+        padding-left: 5px;
+    }
+    .transit-headingType {
+        font-size: 18px;
+        color: rgba(48, 48, 48, .9);
+    }
+    .transit-offering-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+    .transit-offering-contents {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid lightgray;
+    }
+    .transit-offering-contents img {
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    .transit-offering-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7.5px;
+        padding: 9px 10.8px;
+    }
+    .transit-offering-textH {
+        font-size: 23px;
+        font-weight: 600;
+        color: rgba(50, 50, 50, .9);
+    }
+    .transit-offering-textS {
+        font-size: 17.7px;
+        color: rgba(48, 48, 48, .9);
+    } */

@@ -1,0 +1,192 @@
+.login-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+}
+.login-container {
+    display: flex;
+    column-gap: 100px;
+    margin-top: -60px;
+}
+/*LEFT-SECTION*/
+.left-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10.5px;
+}
+.header-text {
+    font-weight: 700;
+    font-size: 36px;
+    color: rgb(15, 16, 53);
+    line-height: .9;
+}
+.secondary-texts {
+    display: inline-block;
+    flex-direction: column;
+    line-height: 2.3;
+}
+.secondary-texts p {
+    font-size: 18.5px;
+    font-weight: 500;
+    color: rgb(15, 16, 53, .8);
+}
+.secondary-texts label {
+    font-weight: 700;
+    font-size: 21.7px;
+    line-height: 1.1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 16, 53);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.home-page {
+    display: flex;
+    margin-top: 10px;
+}
+.home-icon-label {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 8px 12px;
+    border-radius: 100px;
+    background-color: rgba(41, 86, 235, 0.1);
+}
+.home-icon-label img {
+    width: 22px;
+}
+.home-page label {
+    color: rgba(13, 14, 53, .8);
+    font-size: 16px;
+    font-weight: 900;
+}
+/*RIGHT-SECTION*/
+.login-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    background-color: #ffffff;
+}
+.validation-concern {
+    display: flex;
+    width: 100%;
+}
+/*validation-constraint*/
+.validation-constraint {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(241, 167, 167);
+    background-color: rgba(252, 155, 155, 0.3);
+    border-radius: 4px;
+    width: 100%;
+    padding: 7px 10px;
+    color: rgb(129, 39, 39);
+    font-weight: 500;
+    font-size: 17.2px;
+    cursor: pointer;
+  }
+.prompt-text {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+  }
+  .close-icon {
+    width: 25px;
+  }
+.field-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px; /*8*/ 
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.field-form input.form-input, button.form-submit {
+    width: 369px;
+    height: 45.5px;
+    border: none;
+    border-radius: 3.5px;
+    font-size: 16.7px;
+    font-weight: 400;
+}
+.field-form input.form-input::placeholder {
+    font-weight: 200;
+}
+.field-form input {
+    padding-left: 12px;
+    box-shadow: 0 0 2.2px #4e4e4e;
+    caret-color: rgba(145, 128, 240);
+}
+/* .field-section #username, .password-container #password {
+    box-shadow: 0 0 4px red;
+} */
+.field-form input::placeholder {
+    font-size: 17px;
+}
+.field-form input:focus {
+    outline: 1px solid rgba(58, 114, 219, 0.9);
+}
+.field-form button.form-submit {
+    background-color: rgb(15, 16, 53);
+    color: #fff;
+    font-weight: 600;
+    font-size: 19.8px;
+    width: 100%;
+}
+.field-form hr{
+    /* border: ; */
+    width: 100%;
+}
+.field-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.5px;
+}   
+#danger-alert {
+    background-color: rgba(255, 94, 94, 0.3);
+    color: rgb(243, 67, 67);
+    column-gap: 5px;
+    width: 369px;
+    height: 100%;
+    margin-bottom: -.5px;
+}
+.password-container {
+    position: relative;
+}
+.peek-password {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2px;
+    cursor: pointer;
+}
+.peek-password img {
+    width: 25px;
+}
+.field-error {
+    color: rgb(253, 68, 68);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.create-account-container {
+    display: flex;
+    justify-content: center;
+}
+.create-account-container button {
+    background-color: rgb(47, 218, 84);
+    padding: 0 12px;
+    height: 45.5px;
+    border: none;
+    font-weight: 600;
+    font-size: 19px;
+    color: rgb(252, 252, 252);
+    border-radius: 4px;
+    
+}

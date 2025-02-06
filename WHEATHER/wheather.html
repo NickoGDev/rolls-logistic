@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <!-- Linking to Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&display=swap">
+</head>
+<body>
+    <div class="body-container">
+        <div class="weather-app-container">
+            <div class="input-country">
+                <input type="text" id="search-country" placeholder="country">
+            </div>
+            <label for="invalid-country" id="invalid-country"></label>
+            <div class="weather-city" id="weather-city">City</div>
+            <div class="city-clock-con">
+                <div class="current-time" id="current-time">10:14pm</div>
+                <div class="current-date" id="current-date">Saturday, February 2, 2024</div>
+            </div>
+            <div class="majorData-section">
+                <div class="city-date-con">
+                </div>
+                <div class="row-weather-dataCon">
+                    <div class="temperature-icon-valueCon">
+                        <img class="weather-icon" src="" alt="" id="weather-icon">
+                        <div class="temperature" id="temp">11</div>
+                    </div>
+                    <div class="weather-secon-data">
+                        <div class="weather-description" id="weather-description">Weather Description</div>
+                        <div class="min-max-temp" id="min-max-temp">min-max-temp</div>
+                        <div class="wind-directionSpeed" id="wind-direction">Wind direction and speed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-app-container">
+            <div class="input-country">
+                <input type="text" id="search-country1" placeholder="country">
+            </div>
+            <label for="invalid-country" id="invalid-country1"></label>
+            <div class="weather-city" id="weather-city1">City</div>
+            <div class="city-date-con">
+                <div class="city-clock-con">
+                    <div class="current-time" id="current-time1">10:14pm</div>
+                    <div class="current-date" id="current-date1">Saturday, February 2, 2024</div>
+                </div>
+            </div>
+            <div class="majorData-section">
+                <div class="row-weather-dataCon">
+                    <div class="temperature-icon-valueCon">
+                        <img class="weather-icon" src="" alt="" id="weather-icon1">
+                        <div class="temperature" id="temp1">11</div>
+                    </div>
+                    <div class="weather-secon-data">
+                        <div class="weather-description" id="weather-description1">Weather Description</div>
+                        <div class="min-max-temp" id="min-max-temp1">min-max-temp</div>
+                        <div class="wind-directionSpeed" id="wind-direction1">Wind direction and speed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Linking to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

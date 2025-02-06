@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin login</title>
+    <!-- AJAX CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../../STYLES/OVERALL/overall.css">
+    <link rel="stylesheet" href="../../../STYLES/ADMIN/Madmin-login/Madmin-login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500;600;700;800&family=Assistant:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-section">
+            <div class="login-seperator">
+                <div class="left-section">
+                    <div class="left-lot">
+                        <div class="left-headings">
+                            <label for="" class="left-textP">Deliver it with care!</label>
+                            <label for="" class="left-textS">Rolls Logistics, enhance business systems by providing the most high level service.</label>
+                        </div>
+                        <div class="left-img">
+                            <img class="greeting-image" src="../../../IMAGES/GENERAL/admin-login-greeting.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="right-lot">
+                        <div class="right-credentials-container">
+                            <div class="credential-section">
+                                <div class="top-section">
+                                    <div class="greeting-container">
+                                        <img src="../../../IMAGES/GENERAL/animation-greeting.png" alt="">
+                                    </div>
+                                    <div class="form-identifier-invalid-prompt">
+                                        <div class="right-header-row1">
+                                            Login
+                                            <label>Main admin account</label>
+                                        </div>
+                                        <div class="invalid-prompt" id="invalid-prompt">
+                                            <div class="invalidation-prompt-section">
+                                                <div class="invalidation-input-prompt">
+                                                    <img src="../../../IMAGES/GENERAL/warning-icon.png" alt="" class="invalid-input">
+                                                    <label id="invalid-inputs" for="">Invalid<label class="invalid-highlight"> Username</label> or <label class="invalid-highlight">Password</label></label>
+                                                    <label id="invalid-empty" for="">Input fields must not be empty.</label>
+                                                </div>
+                                                <img id="close-invalidation-prompt" src="../../../IMAGES/GENERAL/close-icon.png" alt="" class="close-invalidation-prompt">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="credential-form" method="POST">
+                                    <div class="credentials-forgetCon">
+                                        <div class="input-container">
+                                            <div class="credential-container">
+                                                <div class="credential-input">
+                                                    <div class="side-input">
+                                                        <div class="left-side-input">
+                                                            <img src="../../../IMAGES/GENERAL/Madmin-login-username.png" alt="">
+                                                            <label for=""></label>
+                                                        </div>
+                                                        <label class="" for="">Email</label>
+                                                    </div>
+                                                    <input type="text" id="input-email">
+                                                </div>
+                                            </div>
+                                            <div class="credential-container">
+                                                <div class="credential-input">
+                                                    <div class="side-input">
+                                                        <div class="left-side-input">
+                                                            <img src="../../../IMAGES/GENERAL/Madmin-login-password.png" alt="">
+                                                            <label for=""></label>
+                                                        </div>
+                                                        <label for="">Password</label>
+                                                    </div>
+                                                    <div class="peek-password-container">
+                                                        <input id="input-password" type="password">
+                                                        <div class="reveal-password-btn" id="peek-password-btn">
+                                                            <img id="peek" src="../../../IMAGES/USER/SIGNUP/peek-password.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="forget-container">
+                                            <a class="forget-password-link" href="">Forget your password?</a>
+                                        </div>
+                                    </div>
+                                    <div class="submit-container">
+                                        <button type="submit" id="submit-btn" name="login-btn">LOGIN</button>
+                                    </div>
+                                    <div class="right-header-row2">
+                                        <p class="membership-f">Not member yet?</p>
+                                        <a class="create-acc-link" href="../../../PHP-MODULES/ADMIN/Madmin-signup/admin-signup.php">Create an account.</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../../JAVASCRIPT/ADMIN/Madmin-login/Madmin-login.js"></script>
+</body>
+
+</html>
